@@ -99,8 +99,8 @@ ABOUT
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
     font-size: 1.5em;
   }
 
@@ -113,7 +113,42 @@ PORTFOLIO
 
 #portfolio {
     background-color: rgb(27, 173, 105);
+    color: white;
+    overflow: hidden;
 }
+
+.item {
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .container > div {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+    /*demo*/
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    margin-right: 50px;
+    margin-left:50px;
+  }
+  
+  .port-img {
+    margin-top: 20px;
+    height: 200px;
+    width: 400px;
+  }
+
+  h3 {
+      font-size: 2em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+  }
 
 /* 
 ======
@@ -121,6 +156,17 @@ SKILLS
 ======
 */
 
+.skill-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.fab {
+    font-size: 3em;
+    color: rgb(11, 11, 48);;
+}
 
 /* 
 ======
@@ -153,7 +199,7 @@ CONTACT FORM
 }
 
 form { 
-    max-width:420px; margin:0px auto;
+    max-width:500px; margin:0px auto;
  }
 
  ::placeholder { 
