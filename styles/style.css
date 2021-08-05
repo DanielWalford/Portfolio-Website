@@ -1,0 +1,82 @@
+/* 
+======
+Global
+======
+*/
+
+html {
+    font-size: 16px;
+}
+
+
+/* 
+======
+NAV BAR
+======
+*/
+
+nav {
+    background-color: rgb(11, 11, 48);
+    margin: 0;
+    overflow: hidden;
+  }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+  }
+
+nav ul li a {
+    color: white;
+    display: block;
+    line-height: 3em;
+    padding: 1em 3em;
+    text-decoration: none;
+  }
+
+nav ul li:first-child {
+    margin-right: auto;
+  }
+ 
+nav a:hover {
+    color: rgb(27, 173, 105);
+  }
+  
+/* 
+======
+HEADER 
+======
+*/
+
+
+header {
+    background-color: rgb(27, 173, 105);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.avatar {
+    border-radius: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+.name-title {
+    margin-top: 30px;
+}
+
+.description {
+    padding-bottom: 50px;
+}
