@@ -4,6 +4,7 @@
 		<title>Daniel Walford</title>
 		<meta charset="utf-8" lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="https://kit.fontawesome.com/d83e2fd658.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/style.css">
 	</head>
@@ -20,17 +21,46 @@
 		</nav>
         <header>
             <div class="container">
-                <img src="./images/draw-an-amazing-custom-headshot-portrait-avatar-from-a-photo.jpg" alt="avatar headshot" class="avatar">
+                <img src="./images/draw-an-amazing-custom-headshot-portrait-avatar-from-a-photo.jpg" alt="avatar" class="avatar">
                 <h1 class="name-title">Daniel Walford</h1>
                 <p class="description">Full-Stack Engineer</p>
             </div>  
         </header>
 		<main>
-
-			
+            <div id="about">
+                <h2>About</h2>
+            </div>
+            <div id="portfolio">
+                <h2>Portfolio</h2>
+            </div>
+            <div id="skills">
+                <h2>Skills</h2>
+            </div>
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <div class="container-form">
+                    <form>      
+                        <input name="fname" type="text" class="feedback-input" placeholder="Full Name" required />   
+                        <input name="email" type="text" class="feedback-input" placeholder="Email" required/>
+                        <input name="phone" type="text" class="feedback-input" placeholder="Phone Number" required/>
+                        <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                        <input type="submit" value="SUBMIT"/>
+                      </form>
+                  </div>
+            </div>
 		</main>
 		<footer>
-		
+            <div class="footer-contact">
+                <div class="github">
+                    <a><i class="fab contact-icon fa-github-square"></i></a>
+                </div>
+                <div class="linkedin">
+                    <a><i class="fab contact-icon fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>Copyright &copy; Daniel Walford 2021</p>
+            </div>
 		</footer>
 	</body>
 </html>

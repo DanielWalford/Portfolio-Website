@@ -75,8 +75,126 @@ header {
 
 .name-title {
     margin-top: 30px;
+    font-size: 4em;
 }
 
 .description {
     padding-bottom: 50px;
+    font-size: 2em;
+}
+
+/* 
+======
+CONTACT FORM
+======
+*/
+
+#contact {
+    background-color: rgb(27, 173, 105);
+}
+
+#contact h2 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+}
+
+form { 
+    max-width:420px; margin:0px auto;
+ }
+
+ ::placeholder { 
+    color: white;
+ }
+
+.feedback-input {
+    color:white;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid rgb(11, 11, 48);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus { 
+    border:2px solid rgb(34, 34, 141); 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:rgb(11, 11, 48);
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    margin-bottom: 20px;
+    font-weight:700;
+}
+
+[type="submit"]:hover { 
+    background-color: rgb(34, 34, 141);
+}
+
+/* 
+======
+FOOTER 
+======
+*/
+
+footer {
+    color: white;
+    background-color: rgb(11, 11, 48);
+}
+
+footer a {
+    margin-top: 0;
+}
+
+footer .footer-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.github {
+    margin: 15px 10px 0px 10px;
+}
+
+.linkedin {
+    margin: 15px 10px 0px 10px;
+}
+
+.contact-icon {
+    color: white;
+    font-size: 3em;
+}
+
+footer .footer-copy {
+    font-size: 0.75em;
+    text-align: center; 
+    height: 50px;
+    line-height: 50px;
+}
+
+footer p {
+    margin-top: 0;
 }
