@@ -3,7 +3,7 @@
 ## Goal
 The goal of this project was to create a responsive portfolio showcasing HTML, CSS and JavaScript.
 
-![screenshot](images/mobileHomepage.png"Screenshot of landing page")
+![screenshot](images/mobileHomepage.png "Screenshot of landing page")
 
 ## Languages & Tools Used
 1. HTML
