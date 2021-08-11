@@ -8,65 +8,98 @@ html {
     font-size: 16px;
 }
 
+/* white heading */
 
-/* 
-======
-NAV BAR
-======
+.white {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* blue heading */
+
+.blue {
+    color: rgb(11, 11, 48);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+/*
+================
+HEADER & NAV BAR 
+================
 */
 
-nav {
+header {
     background-color: rgb(11, 11, 48);
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-  }
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    text-transform: uppercase;
-  }
-
-nav ul li a {
     color: white;
-    display: block;
-    line-height: 3em;
-    padding: 1em 3em;
-    text-decoration: none;
-  }
+    text-transform: uppercase;
+}
 
-nav ul li:first-child {
-    margin-right: auto;
-  }
- 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.logo:hover {
+    color: rgb(27, 173, 105);
+}
+
+
+/* Utility classes */
+.open {
+    height: 350px;
+}
+
+.hidden {
+    display: none;
+}
+
 nav a:hover {
     color: rgb(27, 173, 105);
   }
-  
+
 /* 
 ======
-HEADER 
+ABOUT
 ======
 */
-
-
-header {
+.info {
     background-color: rgb(27, 173, 105);
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 80px;
 }
 
 
@@ -88,20 +121,14 @@ header {
     font-size: 2em;
 }
 
-/* 
-======
-ABOUT
-======
-*/
-
 .about-center {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-    font-size: 1.5em;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: 1em;
   }
 
 
@@ -110,6 +137,7 @@ ABOUT
 PORTFOLIO
 ======
 */
+
 
 #portfolio {
     background-color: rgb(27, 173, 105);
@@ -129,7 +157,6 @@ PORTFOLIO
   
   .container > div {
     flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-    /*demo*/
     margin-bottom: 10px;
   }
   
@@ -140,13 +167,12 @@ PORTFOLIO
   
   .port-img {
     margin-top: 20px;
-    height: 200px;
-    width: 400px;
+    height: 300px;
+    width: 500px;
   }
 
   h3 {
       font-size: 2em;
-      text-transform: uppercase;
       margin-bottom: 0;
   }
 
@@ -156,9 +182,10 @@ SKILLS
 ======
 */
 
+
 .skill-icon {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 40px;
     margin-left: 40px;
 }
@@ -178,25 +205,6 @@ CONTACT FORM
     background-color: rgb(27, 173, 105);
 }
 
-/* white heading */
-
-.white {
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2em;
-    text-transform: uppercase;
-}
-
-/* blue heading */
-
-.blue {
-    color: rgb(11, 11, 48);
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2em;
-    text-transform: uppercase;
-}
 
 form { 
     max-width:500px; margin:0px auto;
@@ -295,4 +303,104 @@ footer .footer-copy {
 
 footer p {
     margin-top: 0;
+}
+
+/* 
+======
+MEDIA 
+======
+*/
+
+@media all and (max-width: 720px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 250ms height ease-in-out;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+
+    li a {
+        font-size: 1.4rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav a:hover {
+        color: rgb(27, 173, 105);
+      }
+
+      .avatar {
+        border-radius: 35%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        height: 50%;
+        width: 50%;
+    }
+    
+    .name-title {
+        margin-top: 30px;
+        font-size: 2em;
+    }
+    
+    .description {
+        padding-bottom: 50px;
+        font-size: 1em;
+    }
+
+/* 
+======
+ABOUT
+======
+*/
+
+
+.about-center {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+/* 
+======
+PORTFOLIO
+======
+*/  
+  .container {
+    flex-direction: column;
+  }
+  
+  .port-img {
+    height: 75%;
+    width: 75%;
+  }
+
+  h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+  }
+
+/* 
+======
+CONTACT FORM
+======
+*/
+
+form { 
+    max-width:300px; margin:0px auto;
+ }
 }
